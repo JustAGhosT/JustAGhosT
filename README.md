@@ -1,9 +1,9 @@
-# Jurie “JustAGhosT” Smit — AI on Azure
+# Jurie “JustAGhosT” de Klerk — AI on Azure
 
 Senior full-stack architect & DevOps engineer. I build **agentic platforms**,
 **governed Azure IaC**, **AI-assisted DevOps**, and **modular full-stack apps**.
 
-**Contact:** smit.jurie@gmail.com · LinkedIn: https://www.linkedin.com/in/juriesmit/
+**Contact:** smit.jurie@gmail.com · LinkedIn: https://www.linkedin.com/in/your-handle
 
 ## What I build
 - Agents & orchestration, evaluation, and governance.
@@ -26,9 +26,6 @@ Senior full-stack architect & DevOps engineer. I build **agentic platforms**,
   AI-assisted PR automation (Actions, Docker, Teams/Jira/Linear).
 - [crisis-unleashed-app](https://github.com/JustAGhosT/crisis-unleashed-app) —
   React + FastAPI full-stack starter with tests and CI/CD.
-
-**Stack:** C#/.NET 9, FastAPI, Node/TypeScript, gRPC/REST, SQL Server/Postgres,
-Redis, Kafka/Service Bus, OpenTelemetry.
 
 ---
 *Remote-friendly · EU time-zones*
