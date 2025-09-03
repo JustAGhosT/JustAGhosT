@@ -1,4 +1,4 @@
-# Jurie “JustAGhosT” de Klerk — AI on Azure
+# Jurie “JustAGhosT” Smit — AI on Azure
 
 Senior full-stack architect & DevOps engineer. I build **agentic platforms**,
 **governed Azure IaC**, **AI-assisted DevOps**, and **modular full-stack apps**.
