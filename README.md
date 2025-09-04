@@ -3,7 +3,6 @@
 [![Mail](https://img.shields.io/badge/email-smit.jurie%40gmail.com-blue)](mailto:smit.jurie@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/linkedin-justaghost-informational)](https://www.linkedin.com/in/your-handle)
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=JustAGhosT&show_icons=true)](url)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JustAGhosT&layout=compact)
 
 Senior full-stack architect & DevOps engineer. I build **agentic platforms**,
