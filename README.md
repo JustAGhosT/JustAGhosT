@@ -1,4 +1,4 @@
-# Jurie “JustAGhosT” Smit — AI on Azure
+# Jurie “JustAGhosT” Smit — AI on Azure” → “Agentic Platform & Governance Architect | Event-Driven AI + Secure Azure Foundations
 
 [![Mail](https://img.shields.io/badge/email-smit.jurie%40gmail.com-blue)](mailto:smit.jurie@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/linkedin-justaghost-informational)](https://www.linkedin.com/in/your-handle)
