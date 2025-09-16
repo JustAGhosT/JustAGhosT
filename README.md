@@ -1,32 +1,53 @@
-# Jurie “JustAGhosT” Smit — AI on Azure” → “Agentic Platform & Governance Architect | Event-Driven AI + Secure Azure Foundations
+# Jurie “JustAGhosT” Smit — Agentic Platform & Governance Architect
 
-[![Mail](https://img.shields.io/badge/email-smit.jurie%40gmail.com-blue)](mailto:smit.jurie@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/linkedin-justaghost-informational)](https://www.linkedin.com/in/your-handle)
+[![Email](https://img.shields.io/badge/email-smit.jurie%40gmail.com-blue)](mailto:smit.jurie@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/linkedin-juriesmit-informational)](https://www.linkedin.com/in/juriesmit)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JustAGhosT&layout=compact)
+Senior full-stack architect & DevOps engineer. I own the vertical slice: agent runtime → policy spine → infra guardrails → AI-assisted DevEx → telemetry UI. Outcome: faster, safer iteration (governed, observable, low-friction delivery).
 
-Senior full-stack architect & DevOps engineer. I build **agentic platforms**,
-**governed Azure IaC**, **AI-assisted DevOps**, and **modular full-stack apps**.
+**Platform Slice (Code > Claims)**
+- cognitive-mesh: Agent / LLM orchestration + RBAC + audit + policy gate (RAG-ready seams).
+- CognitiveMeshUI: Next.js surface; token-driven components; interaction + UX telemetry.
+- autopr-engine: AI-in-the-loop PR analysis (semantic + heuristic weighting) to compress review latency.
+- vv-iac: Azure infra as code (Bicep/Terraform) with what-if + policy chain (cost/compliance drift prevention).
+- crisis-unleashed-app: React + FastAPI clean architecture bootstrap / teaching asset.
+- home-lab-setup: Reproducible Azure homelab (P2S VPN, cert lifecycle, monitoring, cost guardrails).
 
-**Contact:** smit.jurie@gmail.com · LinkedIn: https://www.linkedin.com/in/juriesmit
+**Active Work (Live)**
+- Optimizing policy evaluation latency + deterministic audit event schema.
+- Reducing autopr-engine false positives (semantic diff weighting refinement).
+- Collapsing IaC promotion steps (pre-merge what-if + policy condensation).
 
-## What I build
-- Agents & orchestration, evaluation, and governance.
-- Azure cloud foundations: Bicep/Terraform, gated promotions, cost guardrails.
-- Enterprise-grade backends: .NET/FastAPI/Node; DDD/CQRS/hexagonal; REST+gRPC;
-  async/event-driven; caching; multi-tenant auth/RBAC; SLOs; observability.
-- DevEx & automation: CI/CD, AI-assisted PR review, quality gates, tooling.
-- Product UIs: Next.js + tokens, Storybook, accessibility.
+**Skim These First**
+1. cognitive-mesh /governance → policy_evaluation entrypoint
+2. autopr-engine /core → review_strategy logic
+3. vv-iac /pipelines → gated promotion pattern
 
-**Ecosystem Map**
-- cognitive-mesh: Core agent/LLM governance spine (RBAC, audit, policy, RAG-ready)
-- CognitiveMeshUI: Accessible, telemetry-rich UI surface + interaction layer
-- autopr-engine: AI-in-the-loop PR review (consistency + reduced turnaround)
-- vv-iac: Azure infra as code with policy + what-if gating
-- crisis-unleashed-app: Clean architecture starter (React + FastAPI) for rapid domain bootstrapping
-- home-lab-setup: Practical Azure homelab (VPN, DNS, cert lifecycle, monitoring, cost guardrails)
+**Representative Governance Check**
+```python
+decision = policy_engine.evaluate(workflow_id, context)
+
+if not decision.allow:
+    audit.log(
+        workflow_id,
+        blocked=True,
+        policy=decision.policy_id,
+        reason=decision.reason
+    )
+    raise GovernanceBlock(decision.reason)
+
+trace.record(
+    workflow_id,
+    policy=decision.policy_id,
+    eval_ms=decision.eval_ms
+)
+```
 
 **Stack & Practices**
-Azure • Bicep/Terraform • .NET • Python/FastAPI • TypeScript/Next.js • Event-driven messaging • REST/gRPC • OpenTelemetry • Policy-as-Code • GitHub Actions • DDD/hex (selective)
----
-*Remote-friendly · EU time-zones*
+Azure • Bicep/Terraform • .NET • Python/FastAPI • TypeScript/Next.js • REST/gRPC • Event-driven • OpenTelemetry • Policy-as-Code • GitHub Actions • Selective DDD/hex
+
+**Quick Nav**
+[Agent Core](https://github.com/JustAGhosT/cognitive-mesh) • [PR Automation](https://github.com/JustAGhosT/autopr-engine) • [Infra Guardrails](https://github.com/JustAGhosT/vv-iac) • [UI Surface](https://github.com/JustAGhosT/CognitiveMeshUI)
+
+**Contact**
+Email: smit.jurie@gmail.com · LinkedIn: https://www.linkedin.com/in/juriesmit
