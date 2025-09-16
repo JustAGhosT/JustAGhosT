@@ -39,25 +39,57 @@ Out-of-scope (this revision):
 
 ```mermaid
 flowchart LR
+  %% DIRECTION & TITLE
+  %% High-Level Cognitive Mesh Runtime + Peripheral Pipelines
+
+  %% CLIENT ENTRY
   Client[Client / UI / CLI] --> API[Agent Runtime API]
-  subgraph Runtime[cognitive-mesh]
+
+  %% RUNTIME SUBGRAPH
+  subgraph Runtime[cognitive-mesh Runtime]
     API --> Orchestrator
     Orchestrator --> PolicyEngine
     Orchestrator --> Providers[Action Providers]
-    PolicyEngine --> RBAC
+
+    PolicyEngine --> RBAC[(RBAC)]
     PolicyEngine --> Policies[(Policy Store)]
-    PolicyEngine --> Audit[(Audit Log)]
-    Orchestrator --> Trace[Telemetry / OTEL]
+    PolicyEngine --> Audit[(Append-only Audit Log)]
+    Orchestrator --> Trace[(Telemetry / OTEL)]
+
   end
+
+  %% EXTERNAL / EXTENSION COMPONENTS
   Orchestrator --> Autopr[autopr-engine]
-  Autopr --> Repo[VCS / GitHub]
-  Orchestrator --> InfraPipeline[vv-iac Promotion Pipelines]
-  InfraPipeline --> Azure[Azure Environments]
-  Orchestrator --> Events[Event Bus (future)]
-  UI[CognitiveMeshUI] --> TelemetryAPI[Telemetry/Meta API]
+  Autopr --> Repo[(VCS / GitHub)]
+
+  Orchestrator --> InfraPipeline[VV-IaC Promotion Pipelines]
+  InfraPipeline --> Azure[(Azure Environments)]
+
+  Orchestrator --> Events(Event Bus - future)
+  class Events future;
+
+  %% OBSERVABILITY & READ APIs
+  UI[CognitiveMeshUI] --> TelemetryAPI[Telemetry / Meta API]
   TelemetryAPI --> Trace
   UI --> ReadAudit[Audit Reader]
   ReadAudit --> Audit
+
+  %% CROSS-LINKS
+  Client --> UI
+
+  %% STYLES
+  classDef future stroke-dasharray:5 5,stroke:#888,fill:#fff;
+  classDef store fill:#f5f8ff,stroke:#245,stroke-width:1px;
+  class Policies,Audit,RBAC,Trace,Repo,Azure store;
+
+  %% OPTIONAL: you can add this if you want to visually group governance
+  %% subgraph Governance[Governance Spine]
+  %%   PolicyEngine
+  %%   RBAC
+  %%   Policies
+  %%   Audit
+  %% end
+
 ```
 
 ## 6. Component Inventory
