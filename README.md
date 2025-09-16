@@ -3,7 +3,7 @@
 [![Email](https://img.shields.io/badge/email-smit.jurie%40gmail.com-blue)](mailto:smit.jurie@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/linkedin-juriesmit-informational)](https://www.linkedin.com/in/juriesmit)
 
-Senior full-stack architect & DevOps engineer. I own the vertical slice: agent runtime → policy spine → infra guardrails → AI-assisted DevEx → telemetry UI. Outcome: faster, safer iteration (governed, observable, low-friction delivery).
+I specialize in the entire vertically integrated stack: agent runtime → policy spine → governed Azure infra → AI PR automation → telemetry UI. Outcome: faster, safer iteration (governed, observable, low-friction).
 
 **Platform Slice (Code > Claims)**
 - cognitive-mesh: Agent / LLM orchestration + RBAC + audit + policy gate (RAG-ready seams).
