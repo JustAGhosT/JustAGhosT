@@ -18,5 +18,15 @@ Senior full-stack architect & DevOps engineer. I build **agentic platforms**,
 - DevEx & automation: CI/CD, AI-assisted PR review, quality gates, tooling.
 - Product UIs: Next.js + tokens, Storybook, accessibility.
 
+**Ecosystem Map**
+- cognitive-mesh: Core agent/LLM governance spine (RBAC, audit, policy, RAG-ready)
+- CognitiveMeshUI: Accessible, telemetry-rich UI surface + interaction layer
+- autopr-engine: AI-in-the-loop PR review (consistency + reduced turnaround)
+- vv-iac: Azure infra as code with policy + what-if gating
+- crisis-unleashed-app: Clean architecture starter (React + FastAPI) for rapid domain bootstrapping
+- home-lab-setup: Practical Azure homelab (VPN, DNS, cert lifecycle, monitoring, cost guardrails)
+
+**Stack & Practices**
+Azure • Bicep/Terraform • .NET • Python/FastAPI • TypeScript/Next.js • Event-driven messaging • REST/gRPC • OpenTelemetry • Policy-as-Code • GitHub Actions • DDD/hex (selective)
 ---
 *Remote-friendly · EU time-zones*
