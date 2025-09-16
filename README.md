@@ -18,19 +18,5 @@ Senior full-stack architect & DevOps engineer. I build **agentic platforms**,
 - DevEx & automation: CI/CD, AI-assisted PR review, quality gates, tooling.
 - Product UIs: Next.js + tokens, Storybook, accessibility.
 
-## Selected work
-- [cognitive-mesh](https://github.com/JustAGhosT/cognitive-mesh) —
-  AI platform architecture (governance, RBAC, audit, policy-as-code).
-- [CognitiveMeshUI](https://github.com/JustAGhosT/CognitiveMeshUI) —
-  Next.js, token-driven UI with Storybook and a11y discipline.
-- [vv-iac](https://github.com/JustAGhosT/vv-iac) —
-  Azure IaC (Bicep/Terraform) with what-if validation and approvals.
-- [home-lab-setup](https://github.com/JustAGhosT/home-lab-setup) —
-  Practical Azure ops: VPN, NAT, DNS, certs, monitoring, and costs.
-- [autopr-engine](https://github.com/JustAGhosT/autopr-engine) —
-  AI-assisted PR automation (Actions, Docker, Teams/Jira/Linear).
-- [crisis-unleashed-app](https://github.com/JustAGhosT/crisis-unleashed-app) —
-  React + FastAPI full-stack starter with tests and CI/CD.
-
 ---
 *Remote-friendly · EU time-zones*
