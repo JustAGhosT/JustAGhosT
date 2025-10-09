@@ -26,8 +26,6 @@ Outcome: Safer, faster iteration (governed, observable, low-friction delivery)
 - autopr-engine /core → review_strategy
 - vv-iac /pipelines → gated promotion pattern
 
-```
-
 ## Architecture (Summary)
 
 ```mermaid
