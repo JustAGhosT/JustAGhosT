@@ -26,28 +26,9 @@ Outcome: Safer, faster iteration (governed, observable, low-friction delivery)
 - autopr-engine /core → review_strategy
 - vv-iac /pipelines → gated promotion pattern
 
-## Representative Governance Check
-```python
-decision = policy_engine.evaluate(workflow_id, context)
-if not decision.allow:
-    audit.log(
-        workflow_id,
-        blocked=True,
-        policy=decision.policy_id,
-        reason=decision.reason
-    )
-    raise GovernanceBlock(decision.reason)
-
-trace.record(
-    workflow_id,
-    policy=decision.policy_id,
-    eval_ms=decision.eval_ms
-)
 ```
 
 ## Architecture (Summary)
-<!-- ARCHITECTURE:START -->
-Mermaid exec summary (auto-sync candidate):
 
 ```mermaid
 flowchart LR
@@ -64,9 +45,9 @@ Full spec → ARCHITECTURE.md
 <!-- ARCHITECTURE:END -->
 
 ## Quick Nav
-[Agent Core](https://github.com/JustAGhosT/cognitive-mesh) • 
-[PR Automation](https://github.com/JustAGhosT/autopr-engine) • 
-[Infra Guardrails](https://github.com/JustAGhosT/vv-iac) • 
+[Agent Core](https://github.com/JustAGhosT/cognitive-mesh) 
+[PR Automation](https://github.com/JustAGhosT/autopr-engine) 
+[Infra Guardrails](https://github.com/JustAGhosT/vv-iac)
 [UI Surface](https://github.com/JustAGhosT/CognitiveMeshUI)
 
 ## Stack & Practices
