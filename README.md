@@ -1,55 +1,71 @@
-# Jurie "JustAGhosT" Smit  
-Agentic Platform & Governance Architect • Cognitive Mesh / Policy Spine / AI PR Automation  
-Outcome: Safer, faster iteration (governed, observable, low-friction delivery)
+# Jurie "JustAGhosT" Smit
 
-![Platform](https://img.shields.io/badge/Stack-Azure%20%7C%20.NET%20%7C%20Python%20%7C%20Next.js-blue)
-![Governance](https://img.shields.io/badge/Focus-Policy--as--Code-orange)
-![Automation](https://img.shields.io/badge/AI-PR_Automation-green)
-![Telemetry](https://img.shields.io/badge/Obs-OpenTelemetry-informational)
+Staff / Principal Engineer – AI Platforms, Governance & DevEx
 
-## Platform Slice (Code > Claims)
-- cognitive-mesh: Agent + LLM orchestration, RBAC, audit, policy seams (RAG-ready).
-- CognitiveMeshUI: Token-driven React/Next.js surface + interaction telemetry.
-- autopr-engine: AI-in-loop PR heuristics + semantic diff weighting (review compression).
-- vv-iac: Azure Bicep/Terraform + what-if + policy chain (cost/compliance guard).
-- crisis-unleashed-app: FastAPI + React clean arch teaching baseline.
-- home-lab-setup: Reproducible Azure homelab (P2S VPN, cert lifecycle, monitoring).
+I design and build AI + cloud platforms for regulated, high‑stakes environments  
+(fintech, national citizen portals, multi‑tenant SaaS), where compliance, uptime and cost really matter.
 
-## Active Work
-- Policy eval latency reduction.
-- Deterministic audit event schema (forward-compatible).
-- autopr-engine FP reduction via semantic weighting calibration.
-- IaC promotion condensation: pre-merge what-if + policy collapse.
+---
 
-## Skim These First
-- cognitive-mesh /governance → policy_evaluation entrypoint
-- autopr-engine /core → review_strategy
-- vv-iac /pipelines → gated promotion pattern
+## What I actually do
 
-## Architecture (Summary)
+- Turn legacy, fragile systems into **governed, observable service architectures**
+- Build **agentic / LLM platforms** with real policy seams, auditability and cost controls
+- Automate **delivery workflows** (PR review, infra promotion, change risk) without killing developer flow
 
-```mermaid
-flowchart LR
-  Client --> Runtime
-  Runtime --> Governance
-  Runtime --> Automation
-  Automation --> Repo[(GitHub)]
-  Runtime --> Delivery
-  Delivery --> Cloud[(Azure)]
-  Runtime --> Observability
-```
+---
 
-Full spec → ARCHITECTURE.md  
-<!-- ARCHITECTURE:END -->
+## Flagship projects (code > claims)
 
-## Quick Nav
-[Agent Core](https://github.com/JustAGhosT/cognitive-mesh) 
-[PR Automation](https://github.com/JustAGhosT/autopr-engine) 
-[Infra Guardrails](https://github.com/JustAGhosT/vv-iac)
-[UI Surface](https://github.com/JustAGhosT/CognitiveMeshUI)
+- **cognitive-mesh** – Agent / LLM runtime with RBAC, audit trail and policy evaluation for Azure OpenAI + RAG.  
+  _Demonstrates: AI platform & governance architecture._  
 
-## Stack & Practices
-Azure • Bicep/Terraform • .NET • Python/FastAPI • TypeScript/Next.js • REST/gRPC • Event-driven • OpenTelemetry • Policy-as-Code • GitHub Actions • Hex / selective DDD
+- **CognitiveMeshUI** – Next.js / TypeScript UI and design system for agents, audit views and telemetry; Storybook‑driven.  
+  _Demonstrates: front‑end architecture and UX telemetry for complex platforms._  
+
+- **autopr-engine** – AI‑assisted PR reviewer that runs in CI, Docker or locally, with Jira / Linear / Slack / Teams integration.  
+  _Demonstrates: CI/CD ecosystems, AI‑in‑the‑loop workflows, provider‑agnostic design._  
+
+- **vv-iac** – Azure landing‑zone IaC (Bicep/Terraform) with what‑if validation, budget guardrails and gated promotion across envs.  
+  _Demonstrates: infra‑as‑code, policy‑as‑code, cost and change‑risk governance._  
+
+- **home-lab-setup** – Reproducible Azure homelab (P2S VPN, DNS, cert lifecycle, monitoring, cost reporting), published as a PowerShell module.  
+  _Demonstrates: practical automation, security‑minded infra, operational discipline._  
+
+- **crisis-unleashed-app** – Full‑stack FastAPI + React reference app (auth, clean architecture, CI/CD, tests).  
+  _Demonstrates: modern full‑stack execution pattern I use for teaching / prototypes._
+
+---
+
+## Impact highlights (outside GitHub)
+
+- Led customer‑facing architecture & delivery for **South African eHomeAffairs** and **eVisa** portals under heavy operational constraints.
+- Modernised legacy citizen and financial platforms by decomposing monoliths and introducing contract‑first, modular services.
+- Introduced AI tooling and IaC guardrails to reduce review toil, enable safer changes and keep infra cost under control.
+
+---
+
+## Current focus
+
+- Lower‑latency, more explainable policy evaluation for agentic systems  
+- Deterministic, forward‑compatible audit event schemas  
+- Reducing false positives in AI‑assisted PR review via semantic diff weighting  
+- Making infra promotion safer (pre‑merge what‑if + policy checks as a single gate)
+
+---
+
+## Architecture & stack
+
+AI / agent runtime → Governance → Automation → Delivery → Observability on top of Azure:
+
+- Azure · Bicep · Terraform · .NET
+- Python / FastAPI · TypeScript / Next.js
+- REST / gRPC · Event‑driven patterns
+- Policy‑as‑Code · OpenTelemetry · GitHub Actions · Hexagonal / selective DDD
+
+---
 
 ## Contact
-Email: smit.jurie@gmail.com • LinkedIn: https://www.linkedin.com/in/juriesmit
+
+📧 smit.jurie@gmail.com  
+🔗 LinkedIn: https://www.linkedin.com/in/juriesmit
