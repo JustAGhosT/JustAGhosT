@@ -1,71 +1,196 @@
 # Jurie "JustAGhosT" Smit
 
-Staff / Principal Engineer – AI Platforms, Governance & DevEx
+**Systems Engineer & AI Architect**  
+Regulated platforms • Agentic AI • DeFi risk infra • Regenerative agriculture
 
-I design and build AI + cloud platforms for regulated, high‑stakes environments  
-(fintech, national citizen portals, multi‑tenant SaaS), where compliance, uptime and cost really matter.
-
----
-
-## What I actually do
-
-- Turn legacy, fragile systems into **governed, observable service architectures**
-- Build **agentic / LLM platforms** with real policy seams, auditability and cost controls
-- Automate **delivery workflows** (PR review, infra promotion, change risk) without killing developer flow
+I sit where **AI, legacy systems, and real-world risk** collide:
+- Agent/LLM platforms with **governance and telemetry baked in**
+- **Crypto / DeFi** infra with actual risk math, not hype
+- Farm & land systems where **business plans, code, and dirt** line up
+- Delivery pipelines that make all of the above **repeatable**
 
 ---
 
-## Flagship projects (code > claims)
+## Core themes
 
-- **cognitive-mesh** – Agent / LLM runtime with RBAC, audit trail and policy evaluation for Azure OpenAI + RAG.  
-  _Demonstrates: AI platform & governance architecture._  
+- **Cognitive Mesh & Human–AI collaboration**  
+  Orchestrating tools/agents with RBAC, audit, policy-as-code, and observability.
 
-- **CognitiveMeshUI** – Next.js / TypeScript UI and design system for agents, audit views and telemetry; Storybook‑driven.  
-  _Demonstrates: front‑end architecture and UX telemetry for complex platforms._  
+- **VeritasVault – DeFi risk & chain governance**  
+  Stateless-first smart contracts, cross-chain services, and policy/IaC for regulated-ish crypto.
 
-- **autopr-engine** – AI‑assisted PR reviewer that runs in CI, Docker or locally, with Jira / Linear / Slack / Teams integration.  
-  _Demonstrates: CI/CD ecosystems, AI‑in‑the‑loop workflows, provider‑agnostic design._  
+- **Regenerative agriculture & “skin-in-the-game” design**  
+  Business plans, financial models, and actual farm systems (Zeerust, Regal Roots, pig production).
 
-- **vv-iac** – Azure landing‑zone IaC (Bicep/Terraform) with what‑if validation, budget guardrails and gated promotion across envs.  
-  _Demonstrates: infra‑as‑code, policy‑as‑code, cost and change‑risk governance._  
-
-- **home-lab-setup** – Reproducible Azure homelab (P2S VPN, DNS, cert lifecycle, monitoring, cost reporting), published as a PowerShell module.  
-  _Demonstrates: practical automation, security‑minded infra, operational discipline._  
-
-- **crisis-unleashed-app** – Full‑stack FastAPI + React reference app (auth, clean architecture, CI/CD, tests).  
-  _Demonstrates: modern full‑stack execution pattern I use for teaching / prototypes._
+- **Delivery, infra & governance**  
+  IaC, what-if validation, policy gates, PR automation, and clean app templates.
 
 ---
 
-## Impact highlights (outside GitHub)
+## Featured projects (code > claims)
 
-- Led customer‑facing architecture & delivery for **South African eHomeAffairs** and **eVisa** portals under heavy operational constraints.
-- Modernised legacy citizen and financial platforms by decomposing monoliths and introducing contract‑first, modular services.
-- Introduced AI tooling and IaC guardrails to reduce review toil, enable safer changes and keep infra cost under control.
+### 🧠 Cognitive Mesh – agentic AI platform
+
+- **[`cognitive-mesh`](https://github.com/JustAGhosT/cognitive-mesh)**  
+  Enterprise agent/LLM platform with:
+  - Layered governance: RBAC, audit logging, policy-as-code
+  - Azure OpenAI + RAG ready, cost/usage observability
+  - Hooks for eval frameworks and tool usage tracking  
+  _Shows: how I think about AI platforms when compliance and ops actually matter._
+
+- **[`CognitiveMeshUI`](https://github.com/JustAGhosT/CognitiveMeshUI)**  
+  Next.js / TypeScript UI for Cognitive Mesh:
+  - Token-driven design, Storybook, accessibility focus
+  - UX for agents, tools, audit events & costs
+  - Telemetry wired at the UI layer  
+  _Shows: front‑end architecture, design systems, and UX for AI governance._
+
+- **[`autopr-engine`](https://github.com/JustAGhosT/autopr-engine)**  
+  AI-assisted PR automation engine:
+  - Runs in CI, Docker, or locally
+  - Analyzes PRs and posts actionable reviews
+  - Provider-agnostic, extensible via plugins  
+  _Shows: “AI in the loop” DevEx tooling, not just chatbots._
 
 ---
 
-## Current focus
+### 🧱 VeritasVault – vv-* cluster (DeFi risk & infra)
 
-- Lower‑latency, more explainable policy evaluation for agentic systems  
-- Deterministic, forward‑compatible audit event schemas  
-- Reducing false positives in AI‑assisted PR review via semantic diff weighting  
-- Making infra promotion safer (pre‑merge what‑if + policy checks as a single gate)
+Core VeritasVault repos live in the `vv-*` family:
+
+- **[`vv-chain`](https://github.com/JustAGhosT/vv-chain)** – Solidity smart contracts  
+  - Stateless-first math libraries for TVL, risk scores, health factors  
+  - Oracle adapters, cross-chain encoders, and facades  
+  - Monorepo layout with DSL + compiler hooks for multi-chain targets  
+  _Shows: DeFi risk math, stateless architecture, and contract-level design discipline._
+
+- **[`vv-chain-services`](https://github.com/JustAGhosT/vv-chain-services)** – microservices  
+  - Ethereum/Tezos microservices (Fastify, Postgres, etc.)  
+  - Power identity, reputation, and governance APIs  
+  - Devcontainer + workflows for consistent local/dev/prod setups  
+  _Shows: how I wrap chain logic in sane services + ops._
+
+- **[`vv-iac`](https://github.com/JustAGhosT/vv-iac)** – infrastructure-as-code  
+  - Azure + Terraform/Bicep with `what-if` validation  
+  - Policy-as-code, gated promotions, and cost guardrails  
+  _Shows: IaC with governance and change risk front-and-centre._
+
+- **[`vv-docs`](https://github.com/JustAGhosT/vv-docs)** – documentation portal  
+  - Docusaurus/MDX docs for APIs, concepts, and design guidelines  
+  - Structured for both humans and AI tools to consume  
+  _Shows: how I structure unified context across code, docs, and ops._
+
+- **Also part of the VV slice** (shorter descriptions):
+  - **[`vv-landing`](https://github.com/JustAGhosT/vv-landing)** – Next.js/Tailwind public marketing site  
+  - **[`vv-game-suite`](https://github.com/JustAGhosT/vv-game-suite)** – WebGL DeFi game framework for risk/governance simulations  
+  - **[`vv-dev-tools`](https://github.com/JustAGhosT/vv-dev-tools)** – shared dev tooling and workspace config  
+  - **[`vv-auth`](https://github.com/JustAGhosT/vv-auth)** – auth-related scripts/infra glue  
+
+_Together, the vv-* repos show how I design a **full stack of chain + services + infra + docs** for a real product, not a toy._
 
 ---
 
-## Architecture & stack
+### 🌱 Farms, land & “skin-in-the-game” systems
 
-AI / agent runtime → Governance → Automation → Delivery → Observability on top of Azure:
+This is where the architecture has to survive **cows, pigs, weather, and family politics.**
 
-- Azure · Bicep · Terraform · .NET
-- Python / FastAPI · TypeScript / Next.js
-- REST / gRPC · Event‑driven patterns
-- Policy‑as‑Code · OpenTelemetry · GitHub Actions · Hexagonal / selective DDD
+- **[`zeeplan`](https://github.com/JustAGhosT/zeeplan)** – Zeerust regenerative partnership  
+  - Next.js-based site + a full partnership proposal  
+  - Multi-year regenerative plan, financial projections, risk modeling  
+  - Performance-based equity structure and real ROI numbers  
+  _Shows: applied systems thinking, finance, and negotiation embedded in docs + code._
+
+- **[`farm-business-plan`](https://github.com/JustAGhosT/farm-business-plan)**  
+  - Supporting repo for broader farm planning and modeling  
+  _Shows: how I structure business logic and documentation around a real asset._
+
+- **[`pigpro`](https://github.com/JustAGhosT/pigpro)**  
+  - Full-stack TypeScript monorepo for pig production operations  
+  - `backend/api`, `packages/domain`, DIY/public UI surface  
+  - Docker, Vite, Vitest, Tailwind  
+  _Shows: domain-driven modules, monorepo hygiene, and agri-ops as a proper software domain._
+
+- **[`RegalRoots`](https://github.com/JustAGhosT/RegalRoots)**  
+  - Astro + Svelte + React static site for a local farm  
+  - Public marketing site + business docs in one repo  
+  _Shows: how I connect web presence, tech stack and business artefacts._
+
+(If you want to see how serious I am about this slice, read the `README.md` and plan docs inside `zeeplan`.)
 
 ---
 
-## Contact
+### 🛰 PhoenixRooivalk – counter‑drone system concept
 
-📧 smit.jurie@gmail.com  
-🔗 LinkedIn: https://www.linkedin.com/in/juriesmit
+- **[`PhoenixRooivalk`](https://github.com/JustAGhosT/PhoenixRooivalk)**  
+  Business/technical plan for a modular drone-defence system:
+  - RF jamming, GPS spoofing, physical countermeasures
+  - Clear market segmentation (government, events, private sector)
+  - Financial projections, next steps, and GitHub Pages site  
+  _Shows: concept-to-business-plan thinking in a security / hardware‑adjacent domain._
+
+---
+
+### 🧰 Supporting infra & templates (honourable mentions)
+
+- **[`crisis-unleashed-app`](https://github.com/JustAGhosT/crisis-unleashed-app)**  
+  React + FastAPI full‑stack template with auth, tests, CI/CD and clean architecture. Good view of my default app skeleton.
+
+- **[`home-lab-setup`](https://github.com/JustAGhosT/home-lab-setup)**  
+  Azure homelab via PowerShell (P2S VPN, DNS, cert lifecycle, monitoring, and cost guardrails). Shows my infra/ops defaults.
+
+---
+
+## If you’re evaluating me
+
+**For AI / agentic platforms**
+
+- Code: [`cognitive-mesh`](https://github.com/JustAGhosT/cognitive-mesh), [`CognitiveMeshUI`](https://github.com/JustAGhosT/CognitiveMeshUI)  
+- DevEx / AI in delivery: [`autopr-engine`](https://github.com/JustAGhosT/autopr-engine)
+
+**For DeFi / crypto + risk**
+
+- Smart contracts & risk math: [`vv-chain`](https://github.com/JustAGhosT/vv-chain)  
+- Services / APIs: [`vv-chain-services`](https://github.com/JustAGhosT/vv-chain-services)  
+- Infra & policy: [`vv-iac`](https://github.com/JustAGhosT/vv-iac)  
+- Docs & product surface: [`vv-docs`](https://github.com/JustAGhosT/vv-docs), [`vv-landing`](https://github.com/JustAGhosT/vv-landing)
+
+**For “can this person handle messy reality?”**
+
+- Regenerative farm partnership & ROI: [`zeeplan`](https://github.com/JustAGhosT/zeeplan)  
+- Operational agri system: [`pigpro`](https://github.com/JustAGhosT/pigpro)  
+- Broader farm planning: [`farm-business-plan`](https://github.com/JustAGhosT/farm-business-plan)  
+- Security / hardware concept: [`PhoenixRooivalk`](https://github.com/JustAGhosT/PhoenixRooivalk)
+
+**For generic engineering quality**
+
+- Full‑stack template: [`crisis-unleashed-app`](https://github.com/JustAGhosT/crisis-unleashed-app)  
+- Infra & homelab: [`home-lab-setup`](https://github.com/JustAGhosT/home-lab-setup)
+
+If you only have 5–10 minutes, skim the READMEs in **cognitive-mesh, vv-chain, vv-chain-services, zeeplan, pigpro**.
+
+---
+
+## Tech & practices (short version)
+
+**Cloud & infra**
+
+- Azure, Azure DevOps  
+- Terraform, Bicep, PowerShell  
+- VPN, DNS, TLS automation, cost guardrails
+
+**Stacks**
+
+- C# / .NET, Solidity  
+- Python / FastAPI  
+- TypeScript / React / Next.js / Astro / Svelte
+
+**Architecture & delivery**
+
+- Event-driven & service-based systems  
+- Policy-as-code, IaC promotion, `what-if` gates  
+- OpenTelemetry, structured logging, cost/latency baselines  
+- GitHub Actions CI/CD, quality gates, test harnesses  
+- Hexagonal / layered architectures, domain modules
+
+- LinkedIn: [linkedin.com/in/juriesmit](https://www.linkedin.com/in/juriesmit)  
+- GitHub: you’re here – feel free to open issues or PRs on any of the repos above.
