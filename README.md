@@ -3,7 +3,7 @@
 **Systems Engineer & AI Architect**  
 Regulated platforms • Agentic AI • Rust/TypeScript monorepos • DeFi & regenerative agriculture
 
-> **Currently:** CTO (part-time) at [Phoenix VC](https://github.com/phoenixvc). **Open to remote .NET / architecture contracts from July 2026.**  Bela-Bela, South Africa · [LinkedIn](https://www.linkedin.com/in/juriesmit) · [phoenixvc.tech](https://phoenixvc.tech)
+> **Currently:** CTO (part-time) at [Phoenix VC](https://github.com/phoenixvc). **Open to remote .NET / architecture contracts from July 2026.**  Gauteng, South Africa · [LinkedIn](https://www.linkedin.com/in/juriesmit) · [phoenixvc.tech](https://phoenixvc.tech)
 
 I work where **AI, legacy systems, and real-world risk** collide:
 
