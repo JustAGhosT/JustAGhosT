@@ -14,18 +14,17 @@ I work where **AI, legacy systems, and real-world risk** collide:
 
 ## Where the current work lives
 
-Most active work now happens in the organisations, not this personal account:
+Most active work now happens in the organisations:
 
-- **[Phoenix VC](https://github.com/phoenixvc)** — AI platforms for storytelling, enterprise intelligence and developer ops (TypeScript · .NET · Rust · Azure). Flagship: [`cognitive-mesh`](https://github.com/phoenixvc/cognitive-mesh), plus [`retort`](https://github.com/phoenixvc/retort), [`baton`](https://github.com/phoenixvc/baton), [`sluice`](https://github.com/phoenixvc/sluice), [`codeflow-engine`](https://github.com/phoenixvc/codeflow-engine), [`mystira-workspace`](https://github.com/phoenixvc/mystira-workspace).
-- **[NeuralLiquid](https://github.com/neuralliquid)** — the applied-product brand `cognitive-mesh` is relaunching as: [`house-of-veritas`](https://github.com/neuralliquid/house-of-veritas) (estate management — documents, e-signatures, payroll, compliance), [`convolens`](https://github.com/neuralliquid/convolens), [`omnipost`](https://github.com/neuralliquid/omnipost).
-- **[Nexamesh](https://github.com/Nexamesh)** — counter-UAS defence simulation: [`nexamesh-core`](https://github.com/Nexamesh/nexamesh-core) (Rust/Axum, Next.js, Leptos/WASM, Tauri, Solana).
+- **[Phoenix VC](https://github.com/phoenixvc)** — AI platforms for **storytelling, enterprise intelligence and developer ops** (TypeScript · .NET · Rust · Azure). Active repos: [`cognitive-mesh`](https://github.com/phoenixvc/cognitive-mesh) (agent/LLM platform, .NET 10), [`retort`](https://github.com/phoenixvc/retort) (AI-orchestration framework), [`baton`](https://github.com/phoenixvc/baton) (human+agent task graph, MCP), [`sluice`](https://github.com/phoenixvc/sluice) (AI gateway on Azure Container Apps), [`codeflow-engine`](https://github.com/phoenixvc/codeflow-engine) (multi-agent PR automation), [`deck`](https://github.com/phoenixvc/deck) (Tauri desktop ops). **Mystira** — interactive storytelling app for children — is also a Phoenix VC product (live at [mystira.app](https://mystira.app); repo private).
+- **[NeuralLiquid](https://github.com/neuralliquid)** — the applied-product brand `cognitive-mesh` is relaunching as: [`house-of-veritas`](https://github.com/neuralliquid/house-of-veritas) (estate management — documents, e-signatures, payroll, compliance), [`convolens`](https://github.com/neuralliquid/convolens) (chat analyzer), [`omnipost`](https://github.com/neuralliquid/omnipost).
+- **[Nexamesh](https://github.com/Nexamesh)** — counter-UAS defence simulation: [`nexamesh-core`](https://github.com/Nexamesh/nexamesh-core) (Rust/Axum, Next.js, Leptos/WASM, Tauri, Solana). *(This is the evolution of the earlier PhoenixRooivalk work.)*
 
 If you’re skimming, start with:  
-[`cognitive-mesh`](https://github.com/phoenixvc/cognitive-mesh), [`CognitiveMeshUI`](https://github.com/JustAGhosT/CognitiveMeshUI),  
-[`autopr-engine`](https://github.com/JustAGhosT/autopr-engine),  
-[`PhoenixRooivalk`](https://github.com/JustAGhosT/PhoenixRooivalk),  
+[`cognitive-mesh`](https://github.com/phoenixvc/cognitive-mesh), [`retort`](https://github.com/phoenixvc/retort), [`codeflow-engine`](https://github.com/phoenixvc/codeflow-engine),  
+[`nexamesh-core`](https://github.com/Nexamesh/nexamesh-core),  
 [`farm-business-plan`](https://github.com/JustAGhosT/farm-business-plan), [`zeeplan`](https://github.com/JustAGhosT/zeeplan), [`pigpro`](https://github.com/JustAGhosT/pigpro),  
-[`vv-docs`](https://github.com/JustAGhosT/vv-docs), [`vv-landing`](https://github.com/JustAGhosT/vv-landing).
+[`vv-landing`](https://github.com/JustAGhosT/vv-landing), [`vv-iac`](https://github.com/JustAGhosT/vv-iac).
 
 ---
 
@@ -37,8 +36,8 @@ If you’re skimming, start with:
 - **VeritasVault – DeFi risk & chain governance**  
   Chain contracts, services, landing, and docs wired together via docs + IaC so the whole surface is governable and explainable.
 
-- **PhoenixRooivalk – Rust + TS counter‑drone platform**  
-  A serious monorepo (Rust + TypeScript + Next.js + Docusaurus, Turborepo) for a c‑UAS evidence & control stack with dual-chain anchoring.
+- **Nexamesh / counter‑UAS – Rust + TS platform**  
+  A serious monorepo (Rust + TypeScript + Next.js + Tauri, Turborepo + Cargo) for a c‑UAS evidence & control stack with dual-chain anchoring.
 
 - **Regenerative agriculture & “skin‑in‑the‑game” design**  
   Multi-year farm plans, financial models, and working software aimed at cash flows, not dribbble screenshots.
@@ -62,103 +61,50 @@ If you’re skimming, start with:
   - I treat “agents” as production services: layered architecture, least-privilege, and explicit governance instead of ad-hoc scripts.
   - Hooks for eval and telemetry, not just “call the model and hope”.
 
----
-
-### `CognitiveMeshUI` – governance-first AI UI (Next.js / TS)
-
-**Repo:** https://github.com/JustAGhosT/CognitiveMeshUI
-
-- **Stack:**  
-  - **Next.js + React + TypeScript**  
-  - Tailwind, Storybook, Style Dictionary  
-- **Focus:**  
-  - Token-driven component library  
-  - Screens for agents, tools, audit events, and cost telemetry  
-- **Value:** Front-end architecture that treats AI as **infrastructure**: observable, inspectable, and explainable.
+*(Its governance-first UI, CognitiveMeshUI, and the NeuralLiquid relaunch products build on this platform — repos currently private.)*
 
 ---
 
-### `autopr-engine` – AI-assisted PR automation (Python + Docker + CI)
+### `codeflow-engine` – AI-assisted PR automation (Python + Docker + CI)
 
-**Repo:** https://github.com/JustAGhosT/autopr-engine
+**Repo:** https://github.com/phoenixvc/codeflow-engine  *(continues the earlier, now-archived `autopr-engine`)*
 
 - **Stack:**  
-  - Core: **Python 3.8+** package (published to PyPI)  
+  - Core: **Python** package, multi-agent  
   - Supports: Docker, GitHub Action / Marketplace app  
-  - Extras: Small TypeScript + PowerShell utilities  
 - **What it does:**
   - Analyzes PRs, runs static checks, opens issues, and coordinates multi-agent review flows.
   - Designed to run locally, in CI, or as a GitHub app.
 - **Why it matters:**  
-  - It’s AI applied to **DevEx and governance**: quality gates, automated issue creation, platform detection, and multi-agent workflows instead of another “chat in your IDE” toy.
+  - AI applied to **DevEx and governance**: quality gates, automated issue creation, and multi-agent workflows instead of another “chat in your IDE” toy.
 
 ---
 
 ## 🧱 VeritasVault (vv-*) – DeFi risk & infra slice
 
-VeritasVault is a full surface: contracts, services, landing, docs, and IaC. `vv-docs` is the knowledge hub aggregating contract, service, and infra docs across the VV repos.
+VeritasVault is a full surface: contracts, services, landing, and IaC.
 
-### `vv-docs` – Docusaurus / MDX docs hub
+- **[`vv`](https://github.com/JustAGhosT/vv)** – institutional DeFi analytics & dual-brand trading platform (C#/TS).
+- **[`vv-chain`](https://github.com/JustAGhosT/vv-chain)** – cross-chain DeFi risk intelligence (Solidity).
+- **[`vv-chain-services`](https://github.com/JustAGhosT/vv-chain-services)** – on-chain identity, reputation & governance APIs (Ethereum, Tezos, Postgres, Fastify).
+- **[`vv-landing`](https://github.com/JustAGhosT/vv-landing)** – public marketing site (Next.js + React + Tailwind), deploys to VeritasVault.ai.
+- **[`vv-iac`](https://github.com/JustAGhosT/vv-iac)** – Azure IaC (Bicep/Terraform) with what-if validation, policy-as-code and gated promotions.
+- **[`vv-dev-tools`](https://github.com/JustAGhosT/vv-dev-tools)** – shared dev tooling and workspace config across the VV repos.
 
-**Repo:** https://github.com/JustAGhosT/vv-docs
-
-- **Stack:**  
-  - **Docusaurus + MDX**, Node, Yarn  
-  - Mermaid diagrams, Algolia DocSearch  
-- **Role:**  
-  - Aggregates docs from: `vv-chain`, `vv-chain-services`, `vv`, `vv-frontend`, `vv-gamification`, `vv-dev-tools`, `cognitive-mesh`, etc.  
-  - Includes auto-sync pipelines via GitHub Actions.
-- **Signal:** I actually implement **unified context**: code, infra, and docs wired into one documentation hub.
+These show how I think about **product as a system**: contracts → services → docs → infra → governance.
 
 ---
 
-### `vv-landing` – Next.js marketing surface
+## 🛰 Nexamesh – Rust + TS counter‑drone platform
 
-**Repo:** https://github.com/JustAGhosT/vv-landing
+**Repo:** https://github.com/Nexamesh/nexamesh-core
 
-- **Stack:**  
-  - **Next.js + React + TypeScript**  
-  - Tailwind CSS, CSS modules  
-  - CI/CD with tests, linting, type-checks and deploys to `VeritasVault.net`.  
-- **Role:**  
-  - The public marketing site for VeritasVault.ai.  
-  - Uses structured types and components to keep product messaging and docs aligned.
+A serious **counter‑UAS defence monorepo**, not just a slide deck (evolved from the earlier PhoenixRooivalk).
 
----
-
-### `vv-iac` & friends (infra & ecosystem)
-
-Some VV repos are more infra and platform-facing:
-
-- **`vv-iac`** – Azure IaC for VeritasVault (Bicep/ARM, policy definitions, deployments).  
-- **`vv-*` family referenced in `vv-docs`** – chain services, gamification, frontend, dev-tools, etc, documented from a single hub.
-
-These together show how I think about **product as a system**: contracts → services → docs → infra → governance.
-
----
-
-## 🛰 PhoenixRooivalk – Rust + TS counter‑drone platform
-
-**Repo:** https://github.com/JustAGhosT/PhoenixRooivalk
-
-PhoenixRooivalk is a serious **counter‑UAS defense monorepo**, not just a slide deck. (Now also developed under the [Nexamesh](https://github.com/Nexamesh) org as `nexamesh-core`.)
-
-- **Monorepo & tooling:**  
-  - Turborepo + **pnpm** workspace  
-  - Linting & quality: ESLint, Prettier, Husky, Clippy, cspell  
-  - CI: GitHub Actions, CodeQL, Netlify deploys
-- **Apps:**  
-  - `apps/docs` — **Docusaurus** technical documentation  
-  - `apps/marketing` — **Next.js 14** marketing site (threat simulator, ROI calculator, interactive demos)  
-  - `apps/api` — **Rust (Axum)** API server  
-  - `apps/keeper` — Rust chain keeper  
-  - `apps/evidence-cli` — Rust CLI for evidence flows
-- **Rust crates:**  
-  - `crates/evidence` — core evidence logging  
-  - `crates/anchor-solana` / `anchor-etherlink` — dual-chain anchoring (Solana + Etherlink)  
-  - `crates/address-validation` — address safety checks
-- **Why it matters:**  
-  - It shows I can take a **hardware-adjacent, security-sensitive** domain and turn it into a properly structured Rust+TS platform: docs, UI, API, blockchain layers, and dev tooling in one place.
+- **Monorepo & tooling:** Turborepo + **pnpm** + Cargo workspace; ESLint, Prettier, Husky, Clippy, cspell; CI via GitHub Actions, CodeQL.
+- **Apps:** Docusaurus docs; Next.js marketing (threat simulator, ROI calculator); **Rust (Axum)** API; Rust chain keeper; Rust evidence CLI.
+- **Rust crates:** core evidence logging; dual-chain anchoring (Solana + Etherlink); address validation.
+- **Why it matters:** I can take a **hardware-adjacent, security-sensitive** domain and turn it into a properly structured Rust+TS platform — docs, UI, API, blockchain layers, and dev tooling in one place.
 
 Yes, **Rust** is very much part of my current workflow.
 
@@ -168,133 +114,27 @@ Yes, **Rust** is very much part of my current workflow.
 
 These aren’t theory projects. They sit on **real land, real livestock, and real partners**.
 
-### `farm-business-plan` – Next.js farm planning app
-
-**Repo:** https://github.com/JustAGhosT/farm-business-plan
-
-- **Stack:**  
-  - **Next.js** application (Node/TS)  
-  - Tailwind CSS, Jest tests  
-  - CI/CD with GitHub Actions, deployed to Netlify (`farmplan.netlify.app`)  
-- **Role:**  
-  - Agricultural business plan template & farm management tool.  
-  - Mixes structured docs, financial models, and a web app for ongoing planning.
-
----
-
-### `zeeplan` – Zeerust partnership & ROI model
-
-**Repo:** https://github.com/JustAGhosT/zeeplan
-
-- **Stack:**  
-  - TypeScript-heavy Next.js-style codebase (Next config + TS, ~70% TS, ~29% CSS).  
-- **Content:**  
-  - Full partnership proposal (Zeerust, SA): current state, 5‑year transformation, equity splits, ROI analysis, risk mitigation, version history.  
-- **Why it matters:**  
-  - Shows how I negotiate & design **performance-based, zero-cash entry equity structures** and document them like a system design.
-
----
-
-### `pigpro` – monorepo for pig production ops
-
-**Repo:** https://github.com/JustAGhosT/pigpro
-
-- **Stack:**  
-  - **Full-stack TypeScript** monorepo  
-  - Vite-based frontend, Vitest tests, Tailwind config, Node backend folder structure  
-- **Role:**  
-  - Domain-driven structure for pig production operations.  
-- **Signal:**  
-  - I treat farm ops as a proper software domain: typed modules, tests, shared packages, not a one-off spreadsheet.
-
----
-
-### `goat-farming-guide` – API + Next.js + Azure infra
-
-**Repo:** https://github.com/JustAGhosT/goat-farming-guide
-
-- **Stack:**  
-  - Backend: **C# Azure Functions** API using Azure Cosmos DB  
-  - Frontend: **Next.js + React**  
-  - Infra: `infra/bicep` for Azure resources; Contentful headless CMS integration  
-- **Purpose:**  
-  - Comprehensive goat farming knowledge site: health, feeding, economics, mistakes, investor info, DIY milking stand, etc.  
-- **Why it matters:**  
-  - Shows how I combine **.NET cloud functions + TS frontend + headless CMS + Bicep** to ship a content-heavy domain product.
+- **[`farm-business-plan`](https://github.com/JustAGhosT/farm-business-plan)** – Next.js farm-planning app: structured docs, financial models, ongoing planning.
+- **[`zeeplan`](https://github.com/JustAGhosT/zeeplan)** – Zeerust farm operations plan: 5‑year transformation, equity splits, ROI analysis, risk mitigation — performance-based, zero-cash-entry equity structures documented like a system design.
+- **[`pigpro`](https://github.com/JustAGhosT/pigpro)** – livestock marketplace for South African farmers (React/TypeScript): buy and sell pigs, cattle and agricultural products.
+- **[`goat-farming-guide`](https://github.com/JustAGhosT/goat-farming-guide)** – content platform: **C# Azure Functions** + Cosmos DB backend, Next.js frontend, Bicep infra, Contentful CMS.
 
 ---
 
 ## 🧰 Templates, homelab & supporting systems
 
-### `crisis-unleashed-app` – full‑stack starter (React + FastAPI)
-
-**Repo:** https://github.com/JustAGhosT/crisis-unleashed-app
-
-- **Stack:**  
-  - Frontend: `frontend-next` – **React / Next.js + TypeScript + Tailwind**  
-  - Backend: `backend` – **Python FastAPI**  
-  - Tooling: Docker (frontend/backend), pnpm workspace, Jest, Pyright, k6 perf tests
-- **Role:**  
-  - Modular full‑stack template with auth, API, tests, CI, clean architecture.  
-  - Also doubles as a digital TCG / chain‑integrated concept to keep it interesting.
-
----
-
-### `home-lab-setup` – Azure homelab (PowerShell)
-
-**Repo:** https://github.com/JustAGhosT/home-lab-setup
-
-- **Stack:**  
-  - **PowerShell** automation  
-  - Azure networking + infra  
-- **Scope:**  
-  - P2S VPN, NAT, DNS, certificate lifecycle, monitoring/alerts, cost guardrails (as per repo summary).  
-- **Why it matters:**  
-  - Shows my defaults for **secure, observable cloud networking** and cost control in a small but realistic environment.
+- **[`crisis-unleashed-app`](https://github.com/JustAGhosT/crisis-unleashed-app)** – modular full‑stack starter (React/Next.js + **Python FastAPI**), auth, API, CI, tests, clean architecture.
+- **[`home-lab-setup`](https://github.com/JustAGhosT/home-lab-setup)** – Azure homelab in **PowerShell**: P2S VPN, NAT, DNS, certificate lifecycle, monitoring/alerts, cost guardrails.
 
 ---
 
 ## If you’re evaluating me
 
-### For AI / agent platforms & DevEx
-
-- **Platform:** [`cognitive-mesh`](https://github.com/phoenixvc/cognitive-mesh)  
-- **Governance UI:** [`CognitiveMeshUI`](https://github.com/JustAGhosT/CognitiveMeshUI)  
-- **DevEx / CI automation:** [`autopr-engine`](https://github.com/JustAGhosT/autopr-engine) / [`codeflow-engine`](https://github.com/phoenixvc/codeflow-engine)
-
-### For DeFi / chain + governance
-
-- **Docs hub:** [`vv-docs`](https://github.com/JustAGhosT/vv-docs)  
-- **Public surface:** [`vv-landing`](https://github.com/JustAGhosT/vv-landing)  
-- **Infra & supporting repos:** `vv-iac`, `vv-chain`, `vv-chain-services`, `vv-gamification`, `vv-frontend`, `vv-dev-tools` (all wired together via `vv-docs`).
-
-### For “can this person handle messy reality?”
-
-- Regenerative farm partnership & ROI structure: [`zeeplan`](https://github.com/JustAGhosT/zeeplan)  
-- Crop-agnostic farm planning app: [`farm-business-plan`](https://github.com/JustAGhosT/farm-business-plan)  
-- Operational pig production system: [`pigpro`](https://github.com/JustAGhosT/pigpro)  
-- Goat farming API + content platform: [`goat-farming-guide`](https://github.com/JustAGhosT/goat-farming-guide)  
-
-### For security / Rust-heavy & hardware-adjacent work
-
-- Full Rust + TS monorepo with docs, marketing, API & chain anchoring:  
-  [`PhoenixRooivalk`](https://github.com/JustAGhosT/PhoenixRooivalk) / [`nexamesh-core`](https://github.com/Nexamesh/nexamesh-core)
-
-### For general engineering quality & scaffolding
-
-- Full-stack template (React + FastAPI, CI, tests, perf tooling):  
-  [`crisis-unleashed-app`](https://github.com/JustAGhosT/crisis-unleashed-app)  
-- Infra defaults & Azure plumbing:  
-  [`home-lab-setup`](https://github.com/JustAGhosT/home-lab-setup)
-
-If you only have 10 minutes, skim the READMEs in:
-
-- `cognitive-mesh`  
-- `PhoenixRooivalk`  
-- `vv-docs` / `vv-landing`  
-- `farm-business-plan`  
-- `zeeplan`  
-- `pigpro`
+- **AI / agent platforms & DevEx:** [`cognitive-mesh`](https://github.com/phoenixvc/cognitive-mesh), [`retort`](https://github.com/phoenixvc/retort), [`codeflow-engine`](https://github.com/phoenixvc/codeflow-engine)
+- **DeFi / chain + governance:** [`vv`](https://github.com/JustAGhosT/vv), [`vv-chain`](https://github.com/JustAGhosT/vv-chain), [`vv-landing`](https://github.com/JustAGhosT/vv-landing), [`vv-iac`](https://github.com/JustAGhosT/vv-iac)
+- **“Can this person handle messy reality?”:** [`zeeplan`](https://github.com/JustAGhosT/zeeplan), [`farm-business-plan`](https://github.com/JustAGhosT/farm-business-plan), [`pigpro`](https://github.com/JustAGhosT/pigpro), [`goat-farming-guide`](https://github.com/JustAGhosT/goat-farming-guide)
+- **Security / Rust-heavy & hardware-adjacent:** [`nexamesh-core`](https://github.com/Nexamesh/nexamesh-core)
+- **Engineering quality & scaffolding:** [`crisis-unleashed-app`](https://github.com/JustAGhosT/crisis-unleashed-app), [`home-lab-setup`](https://github.com/JustAGhosT/home-lab-setup)
 
 ---
 
@@ -302,23 +142,23 @@ If you only have 10 minutes, skim the READMEs in:
 
 **Languages & runtimes**
 
-- **TypeScript / JavaScript** – Next.js, React, Node, monorepos (Turborepo, pnpm, Vite)  
-- **Python** – FastAPI backends, automation tools, CLI, PR automation (`autopr-engine`, `crisis-unleashed-app`)  
-- **C# / .NET** – `cognitive-mesh`, Azure Functions API (`goat-farming-guide`)  
-- **Rust** – API services, chain keepers, CLI & core crates in `PhoenixRooivalk` / `nexamesh-core`  
+- **C# / .NET** – `cognitive-mesh` (.NET 10), Azure Functions APIs (`goat-farming-guide`, `vv`)
+- **TypeScript / JavaScript** – Next.js, React, Node, monorepos (Turborepo, pnpm, Vite)
+- **Python** – FastAPI backends, automation tools, CLI, PR automation (`codeflow-engine`, `crisis-unleashed-app`)
+- **Rust** – API services, chain keepers, CLI & core crates in `nexamesh-core`
 
 **Cloud / infra**
 
-- Azure (Functions, Cosmos DB, Static Web Apps, VNets/VPNs, DNS)  
-- Netlify, Vercel and static exports for marketing / doc sites  
-- IaC via Bicep / ARM (`goat-farming-guide`, `vv-iac`), plus homelab PowerShell.
+- Azure (Functions, Cosmos DB, Container Apps, Static Web Apps, VNets/VPNs, DNS); some AWS
+- Netlify / Vercel for marketing & doc sites
+- IaC via Bicep / ARM / Terraform (`vv-iac`, `goat-farming-guide`), plus homelab PowerShell
 
 **Architecture & delivery**
 
-- Monorepos with pnpm / Turborepo where it makes sense  
-- Clean boundaries between frontend/backend/docs/infra  
-- CI/CD with GitHub Actions: tests, linting, type-checking, deploys on most public-facing repos  
-- Policy-as-code orientation (vv‑*, home-lab, vv-iac), and eval/telemetry hooks on AI systems.
+- Monorepos with pnpm / Turborepo where it makes sense
+- Clean boundaries between frontend / backend / docs / infra
+- CI/CD with GitHub Actions: tests, linting, type-checking, deploys
+- Policy-as-code orientation, and eval/telemetry hooks on AI systems
 
 ---
 
